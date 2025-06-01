@@ -65,15 +65,14 @@ tqdm
 
 1. **Клонируйте репозиторий**
 
-   ```bash
-   ```
 
 git clone [https://github.com/ваш-репозиторий/fatigue-monitor.git](https://github.com/ваш-репозиторий/fatigue-monitor.git)
 cd fatigue-monitor
 
-````
+
 
 3. **Установите зависимости**
+````
 
 pip install numpy pandas opencv-python dlib tensorflow fer scikit-fuzzy scikit-learn Pillow tqdm
 ````
@@ -94,7 +93,7 @@ pip install numpy pandas opencv-python dlib tensorflow fer scikit-fuzzy scikit-l
 6. **Проверьте структуру проекта**
 
    ```
-   ```
+
 
 project\_root/
 ├── gui.py
@@ -120,6 +119,7 @@ project\_root/
 * **Модуль `sqlite3`** встроен в Python 3.7+: дополнительная установка **не требуется**.
 
 * **Таблица `metrics`** создаётся со следующей схемой:
+   ```
 
   | Поле              | Тип         | Описание                              |
   | ----------------- | ----------- | ------------------------------------- |
@@ -134,13 +134,14 @@ project\_root/
   | `fatigue_level`   | REAL        | Вычисленный уровень усталости (0–100) |
   | `risk_category`   | REAL        | Вычисленный уровень риска (0–3)       |
   | `recommendations` | TEXT        | Текст рекомендации                    |
+   ```
 
-* **Очистка данных**: при старте GUI вызывается `DELETE FROM metrics`, чтобы удалить старые записи. Если нужно сохранить логи между запусками, закомментируйте эту строку в `main.py`.
+
 
 ## ▶️ Запуск и использование
 
 
-````
+
 
 1. **Запустите GUI**
 
