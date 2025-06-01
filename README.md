@@ -91,10 +91,7 @@ pip install numpy pandas opencv-python dlib tensorflow fer scikit-fuzzy scikit-l
    * `sound4.mp3`
 
 6. **Проверьте структуру проекта**
-
-   ```
-
-
+````
 project\_root/
 ├── gui.py
 ├── main.py
